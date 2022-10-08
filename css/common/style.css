@@ -1,0 +1,172 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh
+}
+
+.container{
+    margin: 0 auto;
+    width: 84%;
+    max-width: 1200px;
+}
+
+/*CORES*/
+
+.c-gray{
+    color: #515070;
+}
+
+.c-white{
+    color: #ffffff;
+}
+
+.c-orange{
+    color: #FF8E6E;
+}
+
+/*BOTÕES*/
+
+.btn-orange{
+    width: 165px;
+    height: 60px;
+    background-color: #FF8E6E;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-gray{
+    background-color: #515070;
+    width: 165px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*PARÁGRAFOS E TÍTULOS*/
+
+.paragrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+
+.subtitulo{ 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*HEADER*/
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header{
+    height: 34px;
+    width: 90px;
+}
+
+.menu-header{
+    width: 412px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu-header li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #898989;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+}
+
+/*SOMOS*/
+
+.secao-somos{
+    position: relative;
+}
+
+.secao-somos img{
+    width: 100%;
+}
+
+.info-somos{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.info-somos p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*SOBRE NÓS*/
+
+.secao-sobre-nos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 688px;
+}
+
+.info-sobre-nos{
+    width: 493px;
+}
+
+/*NOSSOS SERVIÇOS*/
+
+.secao-servicos{
+    position: relative;
+}
+
+.secao-servicos img{
+    width: 100%;
+}
+
+.info-servicos{    
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 493px;
+}
+
+
+
+
+
+
+
+
+
+
+
