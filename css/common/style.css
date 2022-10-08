@@ -46,23 +46,32 @@ body {
 
 /*PARÁGRAFOS E TÍTULOS*/
 
-.paragrafo{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
-
 .titulo{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 48px;
+    margin: 0 0 39px 0;
 }
-
 
 .subtitulo{ 
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    margin: 0 0 7px 0;
+}
+
+.paragrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 25px 0;
+    line-height: 29px;
+}
+
+/*IMAGENS*/
+
+.img-fundo{
+    width: 100%;
 }
 
 /*HEADER*/
@@ -97,21 +106,15 @@ header{
     text-align: right;
 }
 
-/*SOMOS*/
+/*SEÇÃO SOMOS*/
 
 .secao-somos{
     position: relative;
 }
 
-.secao-somos img{
-    width: 100%;
-}
-
 .info-somos{
     position: absolute;
     top: 0;
-    right: 0;
-    left: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -119,15 +122,13 @@ header{
     align-items: flex-start;
 }
 
-
-
 .info-somos p{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
 
-/*SOBRE NÓS*/
+/*SEÇÃO SOBRE NÓS*/
 
 .secao-sobre-nos{
     display: flex;
@@ -140,14 +141,10 @@ header{
     width: 493px;
 }
 
-/*NOSSOS SERVIÇOS*/
+/* SEÇÃO NOSSOS SERVIÇOS*/
 
 .secao-servicos{
     position: relative;
-}
-
-.secao-servicos img{
-    width: 100%;
 }
 
 .info-servicos{    
@@ -158,6 +155,66 @@ header{
     flex-direction: column;
     justify-content: center;
     width: 493px;
+}
+
+/*SEÇÃO DEPOIMENTOS*/
+
+.secao-depoimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 688px;
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+.depoimentos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.depoimentos-pessoas{
+    width: 580px;
+    background-color: #FFFFFF;
+    margin-right: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-perfil{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info-perfil img{
+    margin-right: 19px;
+}
+
+.info-pessoa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nome-pessoa{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 3px 0;
+}
+
+.data-publicacao{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+}
+
+.depoimentos-pessoas > p{
+    color: #898989;
+    margin: 0;
 }
 
 
