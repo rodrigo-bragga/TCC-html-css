@@ -1,0 +1,44 @@
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header{
+    height: 34px;
+    width: 90px;
+}
+
+.menu-header{
+    width: 412px;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu-header li{
+    list-style-type: none;
+    display: flex;
+    align-items: stretch;
+}
+
+.menu-header a{
+    padding: 15px;
+    text-decoration: none;
+    color: #898989;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+}
+
+.menu-header a:hover{
+    background-color: #515070;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+}

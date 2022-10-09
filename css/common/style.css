@@ -1,3 +1,7 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(/css/components/components.css);
+
 body {
     box-sizing: border-box;
     padding: 0;
@@ -11,103 +15,10 @@ body {
     max-width: 1200px;
 }
 
-/*CORES*/
-
-.c-gray{
-    color: #515070;
-}
-
-.c-gray2{
-    color: #898989;
-}
-
-.c-white{
-    color: #ffffff;
-}
-
-.c-orange{
-    color: #FF8E6E;
-}
-
-/*BOTÕES*/
-
-.btn-orange{
-    width: 165px;
-    height: 60px;
-    background-color: #FF8E6E;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 5px;
-}
-
-.btn-gray{
-    background-color: #515070;
-    width: 165px;
-    height: 60px;
-    border: none;
-    border-radius: 5px;
-}
-
-/*PARÁGRAFOS E TÍTULOS*/
-
-.titulo{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    margin: 0 0 39px 0;
-}
-
-.subtitulo{ 
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    margin: 0 0 7px 0;
-}
-
-.paragrafo{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    margin: 0 0 25px 0;
-    line-height: 29px;
-}
-
 /*IMAGENS*/
 
 .img-fundo{
     width: 100%;
-}
-
-/*HEADER*/
-
-header{
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-header{
-    height: 34px;
-    width: 90px;
-}
-
-.menu-header{
-    width: 412px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.menu-header li, a{
-    list-style-type: none;
-    text-decoration: none;
-    color: #898989;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: right;
 }
 
 /*SEÇÃO SOMOS*/
@@ -279,40 +190,16 @@ header{
     width: 493px;
 }
 
-/*FOOTER*/
 
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 187px;
+@media (max-width: 1200px){
+    .secao-sobre-nos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 688px;
+    }
+    .secao-sobre-nos img{
+        order: -1;
+    }
 }
-
-.logos-footer{
-    display: flex;
-    justify-content: space-between;
-}
-
-.info-footer{
-    display: flex;
-    justify-content: space-between;
-}
-
-.links-footer{
-    width: 412px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-    
-
-
-
-
-
-
-
-
-
-

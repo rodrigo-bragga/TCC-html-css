@@ -1,0 +1,76 @@
+/*CORES*/
+
+.c-gray{
+    color: #515070;
+}
+
+.c-gray2{
+    color: #898989;
+}
+
+.c-white{
+    color: #ffffff;
+}
+
+.c-orange{
+    color: #FF8E6E;
+}
+
+/*BOTÕES*/
+
+.btn-orange{
+    width: 165px;
+    height: 60px;
+    background-color: #FF8E6E;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-orange:hover{
+    position: relative;
+    cursor: pointer;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.418);
+    right: 3px;
+    bottom: 3px;
+}
+
+.btn-gray{
+    background-color: #515070;
+    width: 165px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-gray:hover{
+    position: relative;
+    cursor: pointer;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.418);
+    right: 3px;
+    bottom: 3px;
+}
+
+/*PARÁGRAFOS E TÍTULOS*/
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 39px 0;
+}
+
+.subtitulo{ 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 7px 0;
+}
+
+.paragrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 25px 0;
+    line-height: 29px;
+}
