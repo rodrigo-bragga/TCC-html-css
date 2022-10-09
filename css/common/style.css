@@ -17,6 +17,10 @@ body {
     color: #515070;
 }
 
+.c-gray2{
+    color: #898989;
+}
+
 .c-white{
     color: #ffffff;
 }
@@ -217,7 +221,6 @@ header{
 }
 
 .depoimentos-pessoas > p{
-    color: #898989;
     margin: 0;
 }
 
@@ -257,6 +260,50 @@ header{
 .und-funcionalidade p{
     margin: 0 0 0 20px;
 }
+
+/*SEÇÃO FUNCIONALIDADE*/
+
+.secao-fale-conosco{
+    height: 688px;
+    background-color: #F6F6F6;
+}
+
+.conteudo-fale-conosco{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-fale-conosco{
+    width: 493px;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 187px;
+}
+
+.logos-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-footer{
+    width: 412px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
     
 
