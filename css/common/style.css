@@ -6,7 +6,6 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    min-height: 100vh
 }
 
 .container{
@@ -109,7 +108,9 @@ body {
 }
 
 .info-perfil img{
-    margin-right: 19px;
+    margin: 0 19px 10px 0;
+    height: 80px;
+    width: 80px;
 }
 
 .info-pessoa{
@@ -184,22 +185,192 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    padding: 50px 0;
+}
+
+.conteudo-fale-conosco img{
+    width: 70%;
+    max-width: 464px;
 }
 
 .info-fale-conosco{
     width: 493px;
 }
 
+/*RESPONSIVIDADE*/
 
 @media (max-width: 1200px){
+    /*COMPONENTES*/
+    .titulo{
+        font-size: 38px;
+    }
+
+    /*SEÇÃO SOBRE NÓS*/
     .secao-sobre-nos{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 688px;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: auto;
+        padding: 50px 0;
     }
     .secao-sobre-nos img{
         order: -1;
+        padding-bottom: 35px;
+    }
+
+    /*SEÇÃO FUNCIONALIDADES*/
+    .info-funcionalidade{
+        flex-direction: column;
+    }
+
+    .info-funcionalidade > img{
+        order: 2;
+    }
+
+    .descr-funcionalidade{
+        display: flex;
+    }
+
+    .descr-funcionalidade > div:nth-child(1){
+        padding-right: 50px;
+    }
+
+
+    /*SEÇÃO FALE CONOSCO*/
+    .secao-fale-conosco{
+        height: auto;
+    }
+    .conteudo-fale-conosco{
+        height: 100%;
+        display: flex;
+        flex-direction: column;       
+        justify-content: space-between;
+        align-items: center;
+    }
+    .conteudo-fale-conosco > img{
+        padding-bottom: 35px;
+    }
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 90%;
+    }
+   /*SEÇÃO SOMOS*/
+    .secao-somos{
+        height: 760px;
+        background-image: url(/assets/img/home-somos.jpg);
+        background-size: cover;
+    }
+
+    .secao-somos > img{
+        display: none;
+    }
+
+    /*SEÇÃO SOBRE NÓS*/
+    .info-sobre-nos{
+        width: 90%;
+    }
+
+
+    .secao-sobre-nos > img{
+        width: 90%;
+    }
+
+    /*SEÇÃO NOSSO SERVIÇOS*/
+    .secao-servicos{
+        height: 760px;
+        background-image: url(/assets/img/home-nossos-servicos.jpg);
+        background-size: cover;
+    }
+
+    .secao-servicos > img{
+        display: none;
+    }
+
+    .info-servicos{
+        width: 90%;
+    }
+
+    /*SEÇÃO DEPOIMENTOS*/
+    .secao-depoimentos{
+        height: auto;
+        align-items: center;
+    }
+
+    .info-depoimentos{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-depoimentos h1{
+        font-size: 30px;
+    }
+
+    .info-perfil{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-pessoa{
+        align-items: center;
+    }
+
+    .nome-pessoa{
+        font-style: italic;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 500;
+    }
+
+    .depoimentos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .depoimentos-pessoas{
+        margin-bottom: 20px;
+        width: 90%;     
+    }
+
+    .depoimentos-pessoas p{
+        text-align: center;
+    }
+
+    .depoimentos-pessoas:nth-child(1){
+        margin: 0;        
+        margin-bottom: 20px;
+    }
+
+    /*SEÇÃO FUNCIONALIDADES*/
+    .descr-funcionalidade{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descr-funcionalidade > div:nth-child(1){
+        padding-right: 0px;
+    }
+
+    /*SEÇÃO FALE CONOSCO*/
+    .conteudo-fale-conosco{
+        width: 90%;
+    }
+
+    .info-fale-conosco{
+        width: 90%;
+    }
+
+    /*FOOTER*/
+   
+    .info-footer{
+        display: none;
+    }
+
+    header{
+        display: none;
     }
 }

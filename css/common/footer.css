@@ -16,7 +16,7 @@ footer{
 }
 
 .links-footer{
-    width: 412px;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }
