@@ -14,14 +14,25 @@
 <body>
     <header class="container">
         <a href="#">
-            <img class="logo-header" src="assets/img/logo-nome.svg" alt="">
+            <img class="logo-header-desktop" src="assets/img/logo-nome.svg" alt="">
+            <img class="logo-header-mobile" src="assets/img/logo-simples.jpg" alt="Logo">
         </a>
+        <input type="checkbox" id="menu-control" class="menu-control">
+       
+        
         <ul class="menu-header">
-            <li><a href="#">Home</a></li>
+            <li><a href="google.com">Home</a></li>
             <li><a href="#">Sobre nós</a></li>
             <li><a href="#">Serviços</a></li>
             <li><a href="#">Contato</a></li>
+            <label for="menu-control" class="menu-control">
+                    <li>^</li>               
+            </label>
         </ul>
+        
+        <label for="menu-control" class="menu-control">
+            <img src="assets/img/ham-icon.svg" alt="Mostrar menu">
+        </label>
     </header>
 
     <div class="secao-somos">
