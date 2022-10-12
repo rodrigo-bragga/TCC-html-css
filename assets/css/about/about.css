@@ -1,0 +1,112 @@
+@import url(/assets/css/common/header.css);
+@import url(/assets/css/common/footer.css);
+@import url(/assets/css/components/components.css);
+
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.img-fundo{
+    width: 100%;
+}
+
+/*SEÇÃO SOBRE NÓS*/
+
+.secao-sobre-nos{
+    position: relative;
+}
+
+.info-sobre-nos{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*NOSSO TIME*/
+.secao-nosso-time{
+    padding: 44px 0 50px 0;
+}
+
+.info-nosso-time h1{
+    margin: 0;
+}
+
+.pessoas-time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pessoa{
+    margin-right: 50px;
+    position: relative;
+    width: 257px;
+}
+
+.info-pessoa{
+    background-color: #515070;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 257px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0.7;
+
+}
+
+.info-pessoa .paragrafo, .subtitulo{
+    width: 90%;
+    margin: 10px auto 20px auto ;
+    line-height: normal;
+}
+
+.info-pessoa .subtitulo{
+    margin-bottom: 0;
+}
+
+
+/*MISSÃO VISÃO VALORES*/
+.secao-mis-vis-val{
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 425px;
+}
+
+.secao-mis-vis-val h1{
+    margin: 0;
+}
+
+.secao-mis-vis-val .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-mis-vis-val > div{
+    padding-right: 50px;
+}
+
+.mis-vis-val-titulo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+@media (max-width: 1330px){
+    .pessoas-time{
+        height: 1200px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

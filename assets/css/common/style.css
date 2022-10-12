@@ -1,6 +1,6 @@
 @import url(header.css);
 @import url(footer.css);
-@import url(/css/components/components.css);
+@import url(/assets/css/components/components.css);
 
 body {
     box-sizing: border-box;
@@ -8,11 +8,6 @@ body {
     margin: 0;
 }
 
-.container{
-    margin: 0 auto;
-    width: 84%;
-    max-width: 1200px;
-}
 
 /*IMAGENS*/
 
@@ -256,7 +251,7 @@ body {
    /*SEÇÃO SOMOS*/
     .secao-somos{
         height: 760px;
-        background-image: url(/assets/img/home-somos.jpg);
+        background-image: url(/assets/img/home/home-somos.jpg);
         background-size: cover;
     }
 
@@ -283,7 +278,7 @@ body {
     /*SEÇÃO NOSSO SERVIÇOS*/
     .secao-servicos{
         height: 760px;
-        background-image: url(/assets/img/home-nossos-servicos.jpg);
+        background-image: url(/assets/img/home/home-nossos-servicos.jpg);
         background-size: cover;
     }
 

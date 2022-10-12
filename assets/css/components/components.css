@@ -1,5 +1,11 @@
 /*CORES*/
 
+.container{
+    margin: 0 auto;
+    width: 84%;
+    max-width: 1200px;
+}
+
 .c-gray{
     color: #515070;
 }
