@@ -15,6 +15,10 @@ footer{
     justify-content: space-between;
 }
 
+.info-footer .paragrafo:nth-child(3){
+    display: none;
+}
+
 .links-footer{
     width: 40%;
     display: flex;
@@ -28,4 +32,34 @@ footer{
 
 .links-footer a:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    footer{
+        height: 70px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .info-footer .paragrafo:nth-child(3){
+        display: block;
+    }
+
+    .info-footer .paragrafo:nth-child(2){
+        display: none;
+    
+    }
+    
+    .info-footer .paragrafo{
+        margin: 0;
+    }
+
+    .logos-footer img{
+        height: 34px;
+    }
+   
+    .info-footer > div, .logos-footer img:nth-child(2){
+        display: none;
+        margin: 0;
+    }
 }

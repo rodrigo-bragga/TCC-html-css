@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/home/logo-aspas.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/contact/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <title>Lorem Ipsum</title>
+</head>
+<body>
+    <header class="container">
+        <a href="/index.html">
+            <img class="logo-header-desktop" src="/assets/img/home/logo-nome.svg" alt="">
+            <img class="logo-header-mobile" src="/assets/img/home/logo-simples.jpg" alt="Logo">
+        </a>
+        <input type="checkbox" id="menu-control" class="menu-control">               
+        <ul class="menu-header">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+            <label for="menu-control" class="menu-control">
+                    <li>^</li>               
+            </label>
+        </ul>
+        <label for="menu-control" class="menu-control">
+            <img src="/assets/img/home/ham-icon.svg" alt="Mostrar menu">
+        </label>
+    </header>
+
+    <section class="secao-contato">
+        <img class="img-fundo" src="/assets/img/contact/contact-contato.jpg" alt="Homem de óculos e barba falando no telefone em uma mesa de escritório">
+        <div class="container">
+            <div class="info-contato">
+                <h1 class="titulo c-white">Contato</h1>
+                <p class="paragrafo c-white">Olá, somos a Lorem Ipsum. <br>
+                    Nosso trabalho é desenvolver textos de marcação.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-enviar-mensagem">        
+        <div class="container">
+            <div class="input-contact">
+                <div class="input-titulo">
+                    <p class="subtitulo c-orange">Envie-nos uma mensagem</p>
+                    <img src="/assets/img/contact/incone-envelop-laranja.png" alt="Ícone de um envelope sendo enviado">
+                </div>
+                <form action="/processa-dados" method="post">
+                    <div class="nome-email">
+                        <div class="campo-input">
+                            <label for="nome" class="paragrafo c-gray2">Nome</label>
+                            <input type="text" id="nome" placeholder="Ex.: José Maria da Silva">
+                        </div>
+                        <div class="campo-input">
+                            <label for="email" class="paragrafo c-gray2">E-mail</label>
+                            <input type="email" id="email" placeholder="Ex.: seuemail@email.com">
+                        </div>
+                    </div>
+                    <div class="ramo-assunto">
+                        <div class="campo-input">
+                            <label for="select" class="paragrafo c-gray2">Ramo em que atua</label>
+                            <select id="select">
+                                <option selected disabled>Selecione...</option>
+                            </select>
+                        </div>
+                        <div class="campo-input">
+                            <div class="campo-assunto">
+                                <label for="assunto" class="paragrafo c-gray2">Assunto</label>
+                                <div>
+                                    <input type="radio" name="assunto">
+                                    <label for="assunto" class="paragrafo c-gray2">Investimento</label>
+                                    <input type="radio" name="assunto">
+                                    <label for="assunto" class="paragrafo c-gray2">Contratação</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo-input">
+                        <label for="mensagem" class="paragrafo c-gray2">Mensagem</label>
+                        <input type="text" placeholder="Digite sua mensagem aqui" id="mensagem"></input>
+                    </div>
+                    <div class="check-enviar">
+                        <div>
+                            <input type="checkbox" id="politica-privacidade">
+                            <label for="politica-privacidade" class="paragrafo c-gray2">Li e concordo com a <a href="#" class="paragrafo c-gray2">política de privacidade</a></label>                            
+                        </div>
+                        <button class="btn-gray c-white">ENVIAR ></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="info-para-contato">
+                <p class="subtitulo c-white">Informações de contato</p>
+                <div class="endereco">
+                    <img src="/assets/img/contact/icone-pin.png" alt="Ícone de pin">
+                    <p class="paragrafo c-white">Av. Theodomiro Porto da Fonseca, 3101 - Cristo Rei, São Leopoldo - RS, 93022-715</p>
+                </div>
+                <div class="telefone">
+                    <img src="/assets/img/contact/incone-celular.png" alt="Ícone de celular">
+                    <p class="paragrafo c-white">(51) 3081-3600</p>
+                </div>
+                <div class="email">
+                    <img src="/assets/img/contact/incone-envelop.png" alt="Ícone de um envelope">
+                    <p class="paragrafo c-white">contato@loremipsungram.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="logos-footer">
+            <img src="/assets/img/home/logo-nome.svg" alt="Logo da empresa">
+            <img src="/assets/img/home/crescer-logo.svg" alt="Logo da Crescer">
+        </div>
+        <div class="info-footer">
+            <div class="links-footer paragrafo c-gray2">
+                <a href="/index.html">Home</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Serviços</a>
+                <a href="#">Contato</a>
+            </div>
+            <p class="paragrafo c-gray2">Copyright ©. Todos os direitos reservados à Lorem Ipsum.</p>
+            <p class="paragrafo c-gray2">Copyright ©. Todos os direitos</p>
+        </div>
+    </footer>
+</body>
+</html>

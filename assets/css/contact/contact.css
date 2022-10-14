@@ -1,0 +1,186 @@
+@import url(/assets/css/common/header.css);
+@import url(/assets/css/common/footer.css);
+@import url(/assets/css/components/components.css);
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.img-fundo{
+    width: 100%;
+}
+
+/*SEÇÃO CONTATO*/
+.secao-contato{
+    position: relative;
+}
+
+.info-contato{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*SEÇÃO ENVIAR MENSAGEM*/
+.secao-enviar-mensagem{    
+    margin-top: -4px;
+}
+
+.secao-enviar-mensagem .subtitulo{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.campo-input > .paragrafo, .campo-assunto > .paragrafo{
+    font-weight: 700;
+}
+
+input{
+    border: none;    
+}
+
+.input-titulo{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 40px 0;
+}
+
+.input-titulo img{
+    width: fit-content;
+    height: fit-content;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-right: 20px;
+    width: 100%;
+    border-bottom: 2px solid #D7D7D7;
+}
+
+.nome-email{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.ramo-assunto{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.campo-assunto{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.check-enviar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 54px 0;
+}
+
+/*INFORMAÇÕES DE CONTATO*/
+.secao-enviar-mensagem .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-contact{
+    width: 60%;
+}
+
+.info-para-contato{
+    width: 40%;
+    height: 555px;
+    background-image: linear-gradient(105.92deg, #515070 -8.44%, #6B69B0 94.86%);
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-para-contato p{
+    margin: 0;
+}
+
+.info-para-contato img{
+    width: fit-content;
+    height: fit-content;
+    padding-right: 20px;
+}
+
+.endereco, .telefone, .email{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1090px){
+    /*SEÇÃO ENVIAR MENSAGEM*/
+    .secao-enviar-mensagem .container{
+        flex-direction: column;
+    }
+
+    .input-contact, .info-para-contato{
+        width: 100%;
+    }
+
+    .info-para-contato{        
+    padding: 40px 0 40px 50px;
+    }
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 90%;
+    }
+
+    /*SEÇÃO CONTATO*/
+    .secao-contato{
+        height: 456px;
+        background-image: url(/assets/img/contact/contact-contato.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .secao-contato > img{
+        display: none;
+    }
+
+    /*SEÇÃO ENVIAR MENSAGEM*/
+    .nome-email, .ramo-assunto, .check-enviar{
+        flex-direction: column;
+    }
+
+    .check-enviar button{
+        margin-top: 25px;
+    }
+
+    
+    .info-para-contato{
+    }
+
+    .info-para-contato .paragrafo{
+        width: 211px;
+    }
+
+    .info-para-contato img{        
+        padding-right: 35px;
+    }
+}
