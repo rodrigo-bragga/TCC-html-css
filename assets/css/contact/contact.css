@@ -67,9 +67,12 @@ form{
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 40px;
-    margin-right: 20px;
     width: 100%;
     border-bottom: 2px solid #D7D7D7;
+}
+
+.nome-email .campo-input:nth-child(1), .ramo-assunto .campo-input:nth-child(1){
+    margin-right: 20px;
 }
 
 .nome-email{
@@ -94,16 +97,18 @@ form{
     justify-content: space-between;
     align-items: center;
     padding: 40px 40px 54px 0;
+    width: 100%;
 }
 
 /*INFORMAÇÕES DE CONTATO*/
-.secao-enviar-mensagem .container{
+.secao-enviar-mensagem{
     display: flex;
     justify-content: space-between;
 }
 
 .input-contact{
     width: 60%;
+    margin-right: 20px;
 }
 
 .info-para-contato{
@@ -111,6 +116,11 @@ form{
     height: 555px;
     background-image: linear-gradient(105.92deg, #515070 -8.44%, #6B69B0 94.86%);
     padding: 40px 50px;
+}
+
+.container-info{
+    height: 300px;
+    margin: 125px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,16 +143,20 @@ form{
 
 @media (max-width: 1090px){
     /*SEÇÃO ENVIAR MENSAGEM*/
-    .secao-enviar-mensagem .container{
+    .secao-enviar-mensagem{
         flex-direction: column;
     }
 
     .input-contact, .info-para-contato{
-        width: 100%;
+        width: initial;
     }
 
     .info-para-contato{        
     padding: 40px 0 40px 50px;
+    }
+
+    .check-enviar{        
+    padding: 40px 0 54px 0;
     }
 }
 
@@ -164,6 +178,15 @@ form{
     }
 
     /*SEÇÃO ENVIAR MENSAGEM*/
+    .container:nth-child(3){
+        width: 100%;
+    }
+
+    .container-mobile{
+        margin: 0 auto;
+        width: 90%;
+    }
+
     .nome-email, .ramo-assunto, .check-enviar{
         flex-direction: column;
     }
@@ -172,8 +195,8 @@ form{
         margin-top: 25px;
     }
 
-    
     .info-para-contato{
+        margin: 0;
     }
 
     .info-para-contato .paragrafo{
